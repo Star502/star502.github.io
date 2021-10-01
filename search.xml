@@ -2,12 +2,12 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2021/09/21/Hello-World/</url>
+    <url>/2021/09/21/Hello%20World/</url>
     <content><![CDATA[<p>经过不懈的努力，博客搭建完成！</p>
 <span id="more"></span>
 
-<p>接着要记得每天更新吖！</p>
-<p><img src="/2021/09/21/Hello-World/1.png"></p>
+<p>接着要记得经常更新吖！</p>
+<p><img src="/2021/09/21/Hello%20World/1.png"></p>
 ]]></content>
       <tags>
         <tag>杂项</tag>
@@ -15,7 +15,7 @@
   </entry>
   <entry>
     <title>PCR memories</title>
-    <url>/2021/09/21/PCR-memories/</url>
+    <url>/2021/09/21/PCR%20memories/</url>
     <content><![CDATA[<blockquote>
 <p>主人你可是男孩子哦。在一生中能掉下眼泪的事，只可以有三次喔。<br>而其中的一次，你若是为了在下，而把它用掉了可就糟蹋了呢。</p>
 </blockquote>
@@ -23,10 +23,60 @@
 
 <h3 id="9-21"><a href="#9-21" class="headerlink" title="9.21"></a>9.21</h3><p>转眼间入坑日服已经一周了，目前失误有：活动少了一个直升球、母了安、井了雪哥。</p>
 <p>希望以后能更加谨慎。</p>
+<h3 id="9-25"><a href="#9-25" class="headerlink" title="9.25"></a>9.25</h3><p>开会战了，伤害感觉还可以。</p>
+<h3 id="9-29"><a href="#9-29" class="headerlink" title="9.29"></a>9.29</h3><p>会战终于结束了，后期根本扛不住，伤害能上万不错了。</p>
+<p>持续时间只有五天，也许比国服的七天要更轻松。</p>
+<h3 id="10-1"><a href="#10-1" class="headerlink" title="10.1"></a>10.1</h3><p>有空了就来自我检讨。</p>
+<p>你为什么要井水壶？你为什么要井万圣大眼？你为什么要抽分两个池子的三限定复刻？</p>
+<p>石头减少 $60000$，这还不是最糟糕的。</p>
+<p>接着很快又去抽了一百多发万圣狗拳，你是真觉得石头是无穷无尽的吗。</p>
+<p>所以接下来所有的常驻都只能等歪了，限定抽满的希望也几乎无了。</p>
+<p>另外发生了一些非常糟糕的事情，希望这几天平平安安度过吧。</p>
 ]]></content>
       <tags>
         <tag>摸鱼</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>「CF12D」Ball</title>
+    <url>/2021/10/01/%E3%80%8CCF12D%E3%80%8DBall/</url>
+    <content><![CDATA[<p>看起来像是三维偏序，但没有要求输出个数。</p>
+<span id="more"></span>
+
+<p>所以只需要简单地一维排序，二维树状数组下标，三维树状数组前缀最值即可。</p>
+]]></content>
+      <tags>
+        <tag>树状数组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「CF12E」Start of the season</title>
+    <url>/2021/10/01/%E3%80%8CCF12E%E3%80%8DStart%20of%20the%20season/</url>
+    <content><![CDATA[<p>如果对角线没有要求是 $0$ 那么每次把排列循环左移一位就可以构造出来。</p>
+<span id="more"></span>
+
+<p>为了方便，令 $n\gets n-1$。</p>
+<p>不妨令第 $i$ 行为 $i,i+1,\cdots,n,1,\cdots,i$，考虑在此基础上插入 $0$。</p>
+<p>将第 $i$ 行的第 $n$ 个数丢到最前面，第 $i-1$ 个数丢到最后面，然后第 $i-1$ 个数换成 $0$。</p>
+<p>这样一通操作过后，第一列的数从上到下依次为 $0\sim n-1$，对称仍然满足。</p>
+<p>因为 $n$ 是奇数，所以第 $n+1$ 列的数从上到下先是一个 $n$，再是从小到大的偶数，再是从小到大的奇数。</p>
+<p>而我们发现刚才被扔到最后一列的数原先都在主对角线上，所以直接对称到最后一行就行了。</p>
+]]></content>
+      <tags>
+        <tag>构造</tag>
+        <tag>思维</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「CF1580C」Train Maintenance</title>
+    <url>/2021/10/01/%E3%80%8CCF1580C%E3%80%8DTrain%20Maintenance/</url>
+    <content><![CDATA[<p>维修的火车数量可以转化为总火车数量减去工作的火车数量。</p>
+<span id="more"></span>
+
+<p>根号分治，$x+y$ 大的直接暴力差分标记。</p>
+<p>小的就先计算出 $x+y$ 这个循环最小的起点，然后在 $1\sim x+y$ 这些位置中暴力修改 $x$ 能覆盖到的位置。查询时枚举 $x+y$，然后同样归到 $1\sim x+y$ 中的位置进行查询。</p>
+<p>除了 $x+y$ 大时的查询，其余部分都是 $O(\sqrt m)$ 的，常数比较拉垮。</p>
+]]></content>
   </entry>
   <entry>
     <title>铃煲观察日记</title>
@@ -34,7 +84,7 @@
     <content><![CDATA[<p>#比铃星#</p>
 <span id="more"></span>
 
-<h3 id="2021-9-21"><a href="#2021-9-21" class="headerlink" title="2021.9.21"></a>2021.9.21</h3><p>今天起就算正式成为星奈铃的粉丝了，希望她越来越好吧。</p>
+<h3 id="9-21"><a href="#9-21" class="headerlink" title="9.21"></a>9.21</h3><p>今天起就算正式成为星奈铃的粉丝了，希望她越来越好吧。</p>
 <p>不过因为学业的原因，直播只能偶尔看看（泪目）。</p>
 ]]></content>
       <tags>

@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/09/21/Hello%20World/</url>
-    <content><![CDATA[<p>经过不懈的努力，博客搭建完成！</p>
-<span id="more"></span>
-
-<p>接着要记得经常更新吖！</p>
-<p><img src="/2021/09/21/Hello%20World/1.png"></p>
-]]></content>
-      <tags>
-        <tag>杂项</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PCR memories</title>
     <url>/2021/09/21/PCR%20memories/</url>
     <content><![CDATA[<blockquote>
@@ -35,6 +22,19 @@
 ]]></content>
       <tags>
         <tag>摸鱼</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/09/21/Hello%20World/</url>
+    <content><![CDATA[<p>经过不懈的努力，博客搭建完成！</p>
+<span id="more"></span>
+
+<p>接着要记得经常更新吖！</p>
+<p><img src="/2021/09/21/Hello%20World/1.png"></p>
+]]></content>
+      <tags>
+        <tag>杂项</tag>
       </tags>
   </entry>
   <entry>
@@ -77,6 +77,10 @@
 <p>小的就先计算出 $x+y$ 这个循环最小的起点，然后在 $1\sim x+y$ 这些位置中暴力修改 $x$ 能覆盖到的位置。查询时枚举 $x+y$，然后同样归到 $1\sim x+y$ 中的位置进行查询。</p>
 <p>除了 $x+y$ 大时的查询，其余部分都是 $O(\sqrt m)$ 的，常数比较拉垮。</p>
 ]]></content>
+      <tags>
+        <tag>根号分治</tag>
+        <tag>差分、前缀和</tag>
+      </tags>
   </entry>
   <entry>
     <title>铃煲观察日记</title>

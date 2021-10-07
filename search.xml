@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/09/21/Hello%20World/</url>
-    <content><![CDATA[<p>经过不懈的努力，博客搭建完成！</p>
+    <title>Forever Emotion</title>
+    <url>/2021/10/06/Forever-Emotion/</url>
+    <content><![CDATA[<p>「等待是最长情的告白」</p>
 <span id="more"></span>
 
-<p>接着要记得经常更新吖！</p>
-<p><img src="/2021/09/21/Hello%20World/1.png"></p>
+<h2 id="Day-610"><a href="#Day-610" class="headerlink" title="Day -610"></a>Day -610</h2><p>散着头发一样美得可爱。</p>
+<p><img src="/2021/10/06/Forever-Emotion/1.jpg"></p>
 ]]></content>
       <tags>
         <tag>杂项</tag>
       </tags>
   </entry>
   <entry>
-    <title>「CF12D」Ball</title>
-    <url>/2021/10/01/%E3%80%8CCF12D%E3%80%8DBall/</url>
-    <content><![CDATA[<p>看起来像是三维偏序，但没有要求输出个数。</p>
+    <title>Hello World</title>
+    <url>/2021/09/21/Hello-World/</url>
+    <content><![CDATA[<p>经过不懈的努力，博客搭建完成！</p>
 <span id="more"></span>
 
-<p>所以只需要简单地一维排序，二维树状数组下标，三维树状数组前缀最值即可。</p>
+<p>接着要记得经常更新吖！</p>
+<p><img src="/2021/09/21/Hello-World/1.png"></p>
 ]]></content>
       <tags>
-        <tag>树状数组</tag>
+        <tag>杂项</tag>
       </tags>
   </entry>
   <entry>
@@ -50,21 +51,15 @@
       </tags>
   </entry>
   <entry>
-    <title>「CF12E」Start of the season</title>
-    <url>/2021/10/01/%E3%80%8CCF12E%E3%80%8DStart%20of%20the%20season/</url>
-    <content><![CDATA[<p>如果对角线没有要求是 $0$ 那么每次把排列循环左移一位就可以构造出来。</p>
+    <title>「CF12D」Ball</title>
+    <url>/2021/10/01/%E3%80%8CCF12D%E3%80%8DBall/</url>
+    <content><![CDATA[<p>看起来像是三维偏序，但没有要求输出个数。</p>
 <span id="more"></span>
 
-<p>为了方便，令 $n\gets n-1$。</p>
-<p>不妨令第 $i$ 行为 $i,i+1,\cdots,n,1,\cdots,i$，考虑在此基础上插入 $0$。</p>
-<p>将第 $i$ 行的第 $n$ 个数丢到最前面，第 $i-1$ 个数丢到最后面，然后第 $i-1$ 个数换成 $0$。</p>
-<p>这样一通操作过后，第一列的数从上到下依次为 $0\sim n-1$，对称仍然满足。</p>
-<p>因为 $n$ 是奇数，所以第 $n+1$ 列的数从上到下先是一个 $n$，再是从小到大的偶数，再是从小到大的奇数。</p>
-<p>而我们发现刚才被扔到最后一列的数原先都在主对角线上，所以直接对称到最后一行就行了。</p>
+<p>所以只需要简单地一维排序，二维树状数组下标，三维树状数组前缀最值即可。</p>
 ]]></content>
       <tags>
-        <tag>构造</tag>
-        <tag>思维</tag>
+        <tag>树状数组</tag>
       </tags>
   </entry>
   <entry>
@@ -83,6 +78,52 @@
       </tags>
   </entry>
   <entry>
+    <title>「CF22E」Scheme</title>
+    <url>/2021/10/03/%E3%80%8CCF22E%E3%80%8DScheme/</url>
+    <content><![CDATA[<p>显然原图是个基环树森林。对于每棵基环树，我们把环上伸出去的子树中的叶子全部搞出来，只保留其中一个不对，其它的直接由环向其连边。</p>
+<span id="more"></span>
+
+<p>然后我们再把所有连通块连成一个环。具体地，上一个连通块的环向下一个连通块保留的叶子连边。特别地，如果不存在叶子，那么直接向环连边即可。</p>
+]]></content>
+      <tags>
+        <tag>构造</tag>
+        <tag>基环树</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「CF12E」Start of the season</title>
+    <url>/2021/10/01/%E3%80%8CCF12E%E3%80%8DStart%20of%20the%20season/</url>
+    <content><![CDATA[<p>如果对角线没有要求是 $0$ 那么每次把排列循环左移一位就可以构造出来。</p>
+<span id="more"></span>
+
+<p>为了方便，令 $n\gets n-1$。</p>
+<p>不妨令第 $i$ 行为 $i,i+1,\cdots,n,1,\cdots,i$，考虑在此基础上插入 $0$。</p>
+<p>将第 $i$ 行的第 $n$ 个数丢到最前面，第 $i-1$ 个数丢到最后面，然后第 $i-1$ 个数换成 $0$。</p>
+<p>这样一通操作过后，第一列的数从上到下依次为 $0\sim n-1$，对称仍然满足。</p>
+<p>因为 $n$ 是奇数，所以第 $n+1$ 列的数从上到下先是一个 $n$，再是从小到大的偶数，再是从小到大的奇数。</p>
+<p>而我们发现刚才被扔到最后一列的数原先都在主对角线上，所以直接对称到最后一行就行了。</p>
+]]></content>
+      <tags>
+        <tag>构造</tag>
+        <tag>思维</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「CF18D」Seller Bob</title>
+    <url>/2021/10/02/%E3%80%8CCF18D%E3%80%8DSeller%20Bob/</url>
+    <content><![CDATA[<p>因为每种硬盘只能被卖至多一次，所以错过了大的 <code>sell</code> 肯定不优。</p>
+<span id="more"></span>
+
+<p>考虑用 <code>bitset</code> 记录从开始到每一天总共卖掉的硬盘。遇到 <code>win</code> 时就直接继承上一天的情况，否则还可以选择保留最近那次获得的对应硬盘到现在然后卖掉。</p>
+<p>补个非常简单的高精度就做完了。</p>
+]]></content>
+      <tags>
+        <tag>线性 DP</tag>
+        <tag>贪心</tag>
+        <tag>高精度</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>铃煲观察日记</title>
     <url>/2021/09/21/%E9%93%83%E7%85%B2%E8%A7%82%E5%AF%9F%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<p>#比铃星#</p>
@@ -93,6 +134,20 @@
 ]]></content>
       <tags>
         <tag>摸鱼</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「CF9D」How many trees</title>
+    <url>/2021/10/01/%E3%80%8CCF9D%E3%80%8DHow%20many%20trees/</url>
+    <content><![CDATA[<p>令 $f_{i,j}$ 表示 $j$ 个结点高度小于等于 $i$ 的二叉树数量。最后只要拿 $f_{n,n}-f_{h-1,n}$ 作为答案即可。</p>
+<span id="more"></span>
+
+<p>转移只比卡特兰数多枚举了高度。值得注意的是，这样是不重不漏的，因为只要上一轮不重不漏，下一轮高度恰好为 $i$ 的二叉树会在高度大于 $i$ 的二叉树里被算且仅算一次。</p>
+<p>时间复杂度 $O(n^3)$。</p>
+]]></content>
+      <tags>
+        <tag>动态规划</tag>
+        <tag>Catalan</tag>
       </tags>
   </entry>
 </search>

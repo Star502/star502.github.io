@@ -6,7 +6,7 @@
     <content><![CDATA[<p>「等待是最长情的告白」</p>
 <span id="more"></span>
 
-<h2 id="Day-610"><a href="#Day-610" class="headerlink" title="Day -610"></a>Day -610</h2><p>散着头发一样美得可爱。</p>
+<h2 id="Day-610"><a href="#Day-610" class="headerlink" title="Day -610"></a>Day -610</h2><p>散着头发一样美得可爱<img src="https://gitee.com/biadocy/pic-cloud/raw/master/qq/chongbai.gif"><img src="https://gitee.com/biadocy/pic-cloud/raw/master/qq/chongbai.gif"><img src="https://gitee.com/biadocy/pic-cloud/raw/master/qq/chongbai.gif"></p>
 <p><img src="/2021/10/06/Forever-Emotion/1.jpg"></p>
 ]]></content>
       <tags>
@@ -28,7 +28,7 @@
   </entry>
   <entry>
     <title>PCR memories</title>
-    <url>/2021/09/21/PCR%20memories/</url>
+    <url>/2021/09/21/PCR-memories/</url>
     <content><![CDATA[<blockquote>
 <p>主人你可是男孩子哦。在一生中能掉下眼泪的事，只可以有三次喔。<br>而其中的一次，你若是为了在下，而把它用掉了可就糟蹋了呢。</p>
 </blockquote>
@@ -45,6 +45,10 @@
 <p>接着很快又去抽了一百多发万圣狗拳，你是真觉得石头是无穷无尽的吗。</p>
 <p>所以接下来所有的常驻都只能等歪了，限定抽满的希望也几乎无了。</p>
 <p>另外发生了一些非常糟糕的事情，希望这几天平平安安度过吧。</p>
+<h3 id="10-9"><a href="#10-9" class="headerlink" title="10.9"></a>10.9</h3><p>国庆期间搞了个月卡和体力周卡，今天体力周卡刚好用完。</p>
+<p>万圣狗拳出了好几天了，可惜物理队爸爸沉了。</p>
+<p>真的被限定连发榨干了。</p>
+<p>在春黑之前坚决不抽免费石头了。</p>
 ]]></content>
       <tags>
         <tag>摸鱼</tag>
@@ -63,36 +67,8 @@
       </tags>
   </entry>
   <entry>
-    <title>「CF1580C」Train Maintenance</title>
-    <url>/2021/10/01/%E3%80%8CCF1580C%E3%80%8DTrain%20Maintenance/</url>
-    <content><![CDATA[<p>维修的火车数量可以转化为总火车数量减去工作的火车数量。</p>
-<span id="more"></span>
-
-<p>根号分治，$x+y$ 大的直接暴力差分标记。</p>
-<p>小的就先计算出 $x+y$ 这个循环最小的起点，然后在 $1\sim x+y$ 这些位置中暴力修改 $x$ 能覆盖到的位置。查询时枚举 $x+y$，然后同样归到 $1\sim x+y$ 中的位置进行查询。</p>
-<p>除了 $x+y$ 大时的查询，其余部分都是 $O(\sqrt m)$ 的，常数比较拉垮。</p>
-]]></content>
-      <tags>
-        <tag>根号分治</tag>
-        <tag>差分、前缀和</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>「CF22E」Scheme</title>
-    <url>/2021/10/03/%E3%80%8CCF22E%E3%80%8DScheme/</url>
-    <content><![CDATA[<p>显然原图是个基环树森林。对于每棵基环树，我们把环上伸出去的子树中的叶子全部搞出来，只保留其中一个不对，其它的直接由环向其连边。</p>
-<span id="more"></span>
-
-<p>然后我们再把所有连通块连成一个环。具体地，上一个连通块的环向下一个连通块保留的叶子连边。特别地，如果不存在叶子，那么直接向环连边即可。</p>
-]]></content>
-      <tags>
-        <tag>构造</tag>
-        <tag>基环树</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>「CF12E」Start of the season</title>
-    <url>/2021/10/01/%E3%80%8CCF12E%E3%80%8DStart%20of%20the%20season/</url>
+    <url>/2021/10/01/%E3%80%8CCF12E%E3%80%8DStart-of-the-season/</url>
     <content><![CDATA[<p>如果对角线没有要求是 $0$ 那么每次把排列循环左移一位就可以构造出来。</p>
 <span id="more"></span>
 
@@ -109,8 +85,23 @@
       </tags>
   </entry>
   <entry>
+    <title>「CF1580C」Train Maintenance</title>
+    <url>/2021/10/01/%E3%80%8CCF1580C%E3%80%8DTrain-Maintenance/</url>
+    <content><![CDATA[<p>维修的火车数量可以转化为总火车数量减去工作的火车数量。</p>
+<span id="more"></span>
+
+<p>根号分治，$x+y$ 大的直接暴力差分标记。</p>
+<p>小的就先计算出 $x+y$ 这个循环最小的起点，然后在 $1\sim x+y$ 这些位置中暴力修改 $x$ 能覆盖到的位置。查询时枚举 $x+y$，然后同样归到 $1\sim x+y$ 中的位置进行查询。</p>
+<p>除了 $x+y$ 大时的查询，其余部分都是 $O(\sqrt m)$ 的，常数比较拉垮。</p>
+]]></content>
+      <tags>
+        <tag>根号分治</tag>
+        <tag>差分、前缀和</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>「CF18D」Seller Bob</title>
-    <url>/2021/10/02/%E3%80%8CCF18D%E3%80%8DSeller%20Bob/</url>
+    <url>/2021/10/02/%E3%80%8CCF18D%E3%80%8DSeller-Bob/</url>
     <content><![CDATA[<p>因为每种硬盘只能被卖至多一次，所以错过了大的 <code>sell</code> 肯定不优。</p>
 <span id="more"></span>
 
@@ -124,6 +115,33 @@
       </tags>
   </entry>
   <entry>
+    <title>「CF22E」Scheme</title>
+    <url>/2021/10/03/%E3%80%8CCF22E%E3%80%8DScheme/</url>
+    <content><![CDATA[<p>显然原图是个基环树森林。对于每棵基环树，我们把环上伸出去的子树中的叶子全部搞出来，只保留其中一个，其它的直接由环向其连边。</p>
+<span id="more"></span>
+
+<p>然后我们再把所有连通块连成一个环。具体地，上一个连通块的环向下一个连通块保留的叶子连边。特别地，如果不存在叶子，那么直接向环连边即可。</p>
+]]></content>
+      <tags>
+        <tag>构造</tag>
+        <tag>基环树</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「CF9D」How many trees</title>
+    <url>/2021/10/01/%E3%80%8CCF9D%E3%80%8DHow-many-trees/</url>
+    <content><![CDATA[<p>令 $f_{i,j}$ 表示 $j$ 个结点高度小于等于 $i$ 的二叉树数量。最后只要拿 $f_{n,n}-f_{h-1,n}$ 作为答案即可。</p>
+<span id="more"></span>
+
+<p>转移只比卡特兰数多枚举了高度。值得注意的是，这样是不重不漏的，因为只要上一轮不重不漏，下一轮高度恰好为 $i$ 的二叉树会在高度大于 $i$ 的二叉树里被算且仅算一次。</p>
+<p>时间复杂度 $O(n^3)$。</p>
+]]></content>
+      <tags>
+        <tag>动态规划</tag>
+        <tag>Catalan</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>铃煲观察日记</title>
     <url>/2021/09/21/%E9%93%83%E7%85%B2%E8%A7%82%E5%AF%9F%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<p>#比铃星#</p>
@@ -134,20 +152,6 @@
 ]]></content>
       <tags>
         <tag>摸鱼</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>「CF9D」How many trees</title>
-    <url>/2021/10/01/%E3%80%8CCF9D%E3%80%8DHow%20many%20trees/</url>
-    <content><![CDATA[<p>令 $f_{i,j}$ 表示 $j$ 个结点高度小于等于 $i$ 的二叉树数量。最后只要拿 $f_{n,n}-f_{h-1,n}$ 作为答案即可。</p>
-<span id="more"></span>
-
-<p>转移只比卡特兰数多枚举了高度。值得注意的是，这样是不重不漏的，因为只要上一轮不重不漏，下一轮高度恰好为 $i$ 的二叉树会在高度大于 $i$ 的二叉树里被算且仅算一次。</p>
-<p>时间复杂度 $O(n^3)$。</p>
-]]></content>
-      <tags>
-        <tag>动态规划</tag>
-        <tag>Catalan</tag>
       </tags>
   </entry>
 </search>

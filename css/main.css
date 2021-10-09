@@ -1203,7 +1203,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #f9030b;
+  background: #119fac;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2722,4 +2722,8 @@ pre {
 }
 .MathJax {
   padding-top: 2px;
+}
+img {
+  display: inline-block;
+  vertical-align: top;
 }
